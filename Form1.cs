@@ -52,11 +52,12 @@ namespace finite_state_machine
         State startingState = State.Q3;
         System.Windows.Forms.Timer timer;
         Dictionary<State, StateInfo> stateInfos;
-           
-    
+        int startCounter = 0;
+        int count = 1;
 
-        
-        
+
+
+
 
         string currentInput = "";
 
@@ -125,6 +126,8 @@ namespace finite_state_machine
         void Run()
         {
             if (InputBox.Text.Length == 0) return;
+
+            ResetStatePictureBox();
             InputBox.ReadOnly = true;
             InputBox.BackColor = Color.LightGray;
 
@@ -143,8 +146,7 @@ namespace finite_state_machine
 
         }
 
-        int startCounter = 0;
-        int count = 1;
+      
         void Tick(object sender, EventArgs e)
         {
             
@@ -208,8 +210,10 @@ namespace finite_state_machine
             currentInput = "";
             InputBox.ReadOnly = false;
             InputBox.Enabled = true;
-            
-          
+            startCounter = 0;
+            count = 1;
+
+
         }
         
 
