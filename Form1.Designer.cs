@@ -383,7 +383,7 @@
             this.Controls.Add(this.state2_pictureBox);
             this.Controls.Add(this.state3_pictureBox);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Automat";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.arrow_31)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arrow_13)).EndInit();
